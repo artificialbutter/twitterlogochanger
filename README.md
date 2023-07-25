@@ -2,11 +2,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <h3 align="center">Twitter Logo Changer</h3>
-  
-  <p align="center">
-    <a href="https://github.com/artificialbutter/SongLinker/issues">Report Bug</a>
+<div>
+  <h1>Twitter Logo Changer</h1>
+  <p>
+    <a href="https://github.com/artificialbutter/SongLinker/issues">Report a Bug</a>
   </p>
 </div>
 
