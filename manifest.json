@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Logo Changer",
+    "version": "1.0",
+    "description": "Changes the new X logo to any content.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
