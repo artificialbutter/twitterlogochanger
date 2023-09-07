@@ -1,4 +1,4 @@
-var text;
+let text;
 
 chrome.storage.sync.get(["customText"], (result) => {
     text = result.customText || "change me!\nclick on the custom text button in your extensions list!";
@@ -11,7 +11,7 @@ let done_first_load = false;
 
 // Function to set the text in the div
 function setFace() {
-    const anchor = document.querySelector('a[aria-label="Twitter"][href="/home"]');
+    const anchor = document.querySelector('a[aria-label="X"][href="/home"]');
     if (anchor) {
         const div = anchor.querySelector('div');
         if (div) {
@@ -35,7 +35,7 @@ const observerCallback = function (mutationsList) {
                 for (const addedNode of mutation.addedNodes) {
                     if (addedNode.nodeType === Node.ELEMENT_NODE && addedNode.tagName === 'A') {
                         const anchor = addedNode;
-                        if (anchor.getAttribute('aria-label') === 'Twitter' && anchor.getAttribute('href') === '/home') {
+                        if (anchor.getAttribute('aria-label') === 'X' && anchor.getAttribute('href') === '/home') {
                             setFace();
                         }
                     }
